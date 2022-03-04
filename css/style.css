@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700&display=swap");
+/**********************
+variables
+**********************/
+/**********************
+basic styles
+**********************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background: #fdf9f6;
+  color: #4c3372;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
