@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBg1 from "@/assets/hero-bg-1.jpeg";
 
 const slides = [
   {
     title: "Psihoterapija",
     subtitle: "Potreba današnjeg čoveka",
     quote: "Terapeut pomaže klijentu da izrazi dragocene aspekte svoje ličnosti, da upozna sebe i postane odgovoran za ono što jeste.",
-    bgColor: "from-gray-200 to-gray-300",
+    bgImage: heroBg1,
   },
   {
     title: "Anksioznost",
@@ -50,18 +51,25 @@ const HeroSlider = () => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className={`w-full h-full bg-gradient-to-br ${slide.bgColor} flex items-center justify-center`}>
-            <div className="container mx-auto px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-4">
-                  {slide.title}
-                </h1>
-                <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8">
-                  {slide.subtitle}
-                </h2>
-                <p className="text-lg md:text-xl italic text-foreground/80 mb-8 leading-relaxed">
-                  "{slide.quote}"
-                </p>
+          <div 
+            className={`w-full h-full flex items-center justify-center ${
+              slide.bgImage ? 'bg-cover bg-center' : `bg-gradient-to-br ${slide.bgColor}`
+            }`}
+            style={slide.bgImage ? { backgroundImage: `url(${slide.bgImage})` } : undefined}
+          >
+            <div className={`w-full h-full flex items-center justify-center ${slide.bgImage ? 'bg-black/40' : ''}`}>
+              <div className="container mx-auto px-4">
+                <div className="max-w-3xl mx-auto text-center">
+                  <h1 className={`text-5xl md:text-7xl font-serif font-bold mb-4 ${slide.bgImage ? 'text-white' : 'text-foreground'}`}>
+                    {slide.title}
+                  </h1>
+                  <h2 className={`text-2xl md:text-3xl mb-8 ${slide.bgImage ? 'text-white/90' : 'text-muted-foreground'}`}>
+                    {slide.subtitle}
+                  </h2>
+                  <p className={`text-lg md:text-xl italic mb-8 leading-relaxed ${slide.bgImage ? 'text-white/90' : 'text-foreground/80'}`}>
+                    "{slide.quote}"
+                  </p>
+                </div>
               </div>
             </div>
           </div>
