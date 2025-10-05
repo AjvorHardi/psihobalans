@@ -58,7 +58,7 @@ const HeroSlider = () => {
             style={slide.bgImage ? { backgroundImage: `url(${slide.bgImage})` } : undefined}
           >
             <div className={`w-full h-full flex items-center justify-center ${slide.bgImage ? 'bg-black/40' : ''}`}>
-              <div className="container mx-auto px-4">
+              <div className="container mx-auto">
                 <div className="max-w-3xl mx-auto text-center">
                   <h1 className={`text-5xl md:text-7xl font-serif font-bold mb-4 ${slide.bgImage ? 'text-white' : 'text-foreground'}`}>
                     {slide.title}
@@ -80,7 +80,7 @@ const HeroSlider = () => {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full"
+        className="absolute left-6 md:left-[100px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full"
         onClick={prevSlide}
       >
         <ChevronLeft size={24} />
@@ -88,7 +88,7 @@ const HeroSlider = () => {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full"
+        className="absolute right-6 md:right-[100px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full"
         onClick={nextSlide}
       >
         <ChevronRight size={24} />
