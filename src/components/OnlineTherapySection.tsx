@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const OnlineTherapySection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="aspect-video rounded-lg overflow-hidden shadow-xl">

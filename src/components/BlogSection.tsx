@@ -35,7 +35,7 @@ const articles = [
 const BlogSection = () => {
   return (
     <section id="clanci" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold mb-4">Najlepše mesto… je sada i ovde…</h2>
           <p className="text-xl text-muted-foreground">psihoterapija i psihologija</p>

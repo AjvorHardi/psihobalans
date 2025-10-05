@@ -1,7 +1,7 @@
 const CertificatesSection = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold mb-4">Diplome i sertifikati</h2>
           <p className="text-xl text-muted-foreground">Svetlana Prokić, diplomirani psiholog i geštalt terapeut</p>

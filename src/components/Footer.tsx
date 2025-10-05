@@ -3,7 +3,7 @@ import { MapPin, Clock, Phone, Mail } from "lucide-react";
 const Footer = () => {
   return (
     <footer id="kontakt" className="bg-foreground text-background py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and about */}
           <div>
